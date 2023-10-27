@@ -7,7 +7,7 @@ import axios from 'axios';
 function Calendar( {year, month }) {
   const currentDate = new Date();
   const currentMonth = currentDate.getMonth(); // October (0-based index)
-  const currentYear = currentDate.getFullYear();
+  const currentYear = currentDate.getFullYear() - 1;
   const [holidays, setHolidays] = useState([]);
 
   const [selectedMonth, setSelectedMonth] = useState(parseInt(month, 10) - 1 || currentMonth);
