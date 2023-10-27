@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Calendar from './Calendar'; // Import your Calendar component
+import Calendar from './components/Calendar'; // Import your Calendar component
 
 
 

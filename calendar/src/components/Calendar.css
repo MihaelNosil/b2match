@@ -45,20 +45,26 @@
 .calendar-days {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
+  
   gap: 0;
   text-align: center;
   width: 100%;
+  height: 80%;
   border-radius: 5px; 
   overflow: hidden;
 }
 
 .day {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   border: 1px solid #ccc;
   font-size: 20px;
-  height: 60px;
   color: hsl(182, 92%, 29%); /* Blue color */
+  
 }
 
 
@@ -67,7 +73,6 @@
   padding: 10px;
   border: 1px solid #ccc;
   font-size: 1.5rem;
-  height: 60px;
 }
 
 .day .day-number {
@@ -75,6 +80,36 @@
   top: 5px; /* Adjust the top position as needed */
   right: 5px; /* Adjust the right position as needed */
   font-size: 0.8rem; /* Adjust the font size as needed */
+  color: black;
+}
+
+.additional-div {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+  overflow: auto;
+  font-size: clamp(0.5rem, 1vw, 2rem);
+
+}
+
+.additional-div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.additional-div li {
+  margin: 4px 0;
+}
+
+.holiday {
+  background-color: hsl(0, 7%, 92%); /* Replace with your desired background color */
+  padding: 4px 0;
+  border-radius: 4px;
+  margin-top: 2px;
+}
+
+.selected-holiday {
   color: black;
 }
 
