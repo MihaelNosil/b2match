@@ -1,0 +1,89 @@
+/* Calendar.css */
+.calendar {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  margin: 20px auto 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.calendar-header {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.header-left {
+  flex: 1; /* Take up available space on the left */
+  text-align: left;
+}
+
+.header-right {
+  flex: 1; /* Take up available space on the right */
+  text-align: right;
+}
+
+.calendar-header button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px; 
+}
+
+.calendar-header button:hover {
+  background-color: #0056b3;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px; 
+  overflow: hidden;
+}
+
+.day {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  height: 60px;
+  color: hsl(182, 92%, 29%); /* Blue color */
+}
+
+
+.day-empty {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1.5rem;
+  height: 60px;
+}
+
+.day .day-number {
+  position: absolute;
+  top: 5px; /* Adjust the top position as needed */
+  right: 5px; /* Adjust the right position as needed */
+  font-size: 0.8rem; /* Adjust the font size as needed */
+  color: black;
+}
+
+.day:nth-child(-n + 7) {
+  font-size: 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 30px; /* Adjust the height for the first row (names of the days) */
+  font-weight: bold; /* Make the text bold for the first row */
+  background-color: hsl(182, 78%, 85%);
+}
