@@ -4,8 +4,9 @@ import './Calendar.css';
 
 
 function Calendar() {
-  const currentMonth = 9; // October (0-based index)
-  const currentYear = 2023;
+  const currentDate = new Date();
+  const currentMonth = currentDate.getMonth(); // October (0-based index)
+  const currentYear = currentDate.getFullYear();
 
   const [selectedMonth, setSelectedMonth] = useState(currentMonth);
   const [selectedYear, setSelectedYear] = useState(currentYear);
