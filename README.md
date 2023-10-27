@@ -8,6 +8,6 @@
 5. You can use any DateTime handling library (luxon, date-fns, moment.js) or similar. ()
 
 **Extra functionality:**
-1.Month and year currently displayed is determined by URL, such as /2022-05-01 (**not finished, but left the code visible**)
-2.After clicking on an event visible in the calendar, more details are displayed. If you use
+1. Month and year currently displayed is determined by URL, such as /2022-05-01 (**not finished, but left the code visible**)
+2. After clicking on an event visible in the calendar, more details are displayed. If you use
 GitHub API, you can show the details about commits. (**extra information is shown in the bottom of the calendar**)
